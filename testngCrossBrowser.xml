@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Cross Browser Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.imran.automation.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Chrome Login Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.imran.automation.tests.auth.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Login Tests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.imran.automation.tests.auth.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Edge Login Tests">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="com.imran.automation.tests.auth.LoginTest"/>
+        </classes>
+    </test>
+</suite>
