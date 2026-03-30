@@ -1,0 +1,23 @@
+[
+  {
+    "testName": "Valid admin login",
+    "scenarioType": "valid",
+    "username": "Admin",
+    "password": "admin123",
+    "expectedUrlKeyword": "/dashboard"
+  },
+  {
+    "testName": "Invalid password login",
+    "scenarioType": "invalid",
+    "username": "Admin",
+    "password": "wrongPassword123",
+    "expectedErrorMessage": "Invalid credentials"
+  },
+  {
+    "testName": "Invalid username login",
+    "scenarioType": "invalid",
+    "username": "WrongAdmin",
+    "password": "admin123",
+    "expectedErrorMessage": "Invalid credentials"
+  }
+]
