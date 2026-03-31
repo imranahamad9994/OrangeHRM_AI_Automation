@@ -1,6 +1,6 @@
-# OrangeHRM Selenium Automation Framework
+# Selenium Automation Framework
 
-This project is a portfolio-ready UI automation framework for the OrangeHRM demo application using:
+This project is a UI automation framework for web practice applications using:
 
 - Java 17
 - Selenium WebDriver
@@ -24,28 +24,25 @@ This framework showcases the same skills highlighted in your resume:
 
 ## Current scope
 
-- Login page automation for OrangeHRM
-- Valid login scenario using Page Factory
+- Automation Practice form submission coverage
+- OrangeHRM login coverage already present in the project
 - JSON-based test data provider
 - Centralized browser and environment configuration
+- Cross-browser execution for Chrome, Firefox, and Edge
 
-## Suggested project roadmap
-
-1. Add invalid login validation scenarios
-2. Add dashboard verification and logout flow
-3. Automate Admin, PIM, and Leave modules
-4. Add retry/listener/reporting support
-5. Add screenshots on failure
-6. Add cross-browser execution from TestNG parameters
-7. Add Jenkins pipeline and GitHub Actions CI
-8. Add extent or allure reporting
-
-## How to run
+## How to run the practice form suite
 
 ```bash
-mvn clean test
+mvn clean test -DsuiteXmlFile=testng-practice-form.xml
 ```
 
-## Demo application
+## How to run the cross-browser suite
 
-`https://opensource-demo.orangehrmlive.com/`
+```bash
+mvn clean test -DsuiteXmlFile=testng-practice-form-cross-browser.xml
+```
+
+## Demo applications
+
+- `https://testautomationpractice.blogspot.com/2018/09/automation-form.html`
+- `https://opensource-demo.orangehrmlive.com/`

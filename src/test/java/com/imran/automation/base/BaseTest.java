@@ -16,8 +16,9 @@ public abstract class BaseTest {
         String browserName = (browser == null || browser.isBlank())
                 ? ConfigReader.get("browser")
                 : browser;
+        boolean headless = Boolean.parseBoolean(ConfigReader.get("headless"));
 
-        DriverFactory.initializeDriver(browserName);
+        DriverFactory.initializeDriver(browserName, headless);
         getDriver().get(ConfigReader.get("baseUrl"));
     }
 

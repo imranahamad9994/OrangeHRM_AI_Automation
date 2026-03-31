@@ -1,0 +1,18 @@
+[
+  {
+    "testName": "happyPathPracticeFormSubmission",
+    "name": "Imran QA",
+    "email": "imran.qa@example.com",
+    "phone": "9876543210",
+    "address": "221B Baker Street\nAutomation City",
+    "gender": "male",
+    "days": ["monday", "wednesday", "friday"],
+    "country": "India",
+    "colors": ["Red", "Blue", "Yellow"],
+    "animals": ["Cat", "Dog", "Lion"],
+    "datePicker1": "03/30/2026",
+    "datePicker2": "30/03/2026",
+    "startDate": "30-03-2026",
+    "endDate": "05-04-2026"
+  }
+]

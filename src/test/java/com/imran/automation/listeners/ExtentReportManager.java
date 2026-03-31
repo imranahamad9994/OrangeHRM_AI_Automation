@@ -38,6 +38,27 @@ public final class ExtentReportManager {
         return EXTENT_TEST.get();
     }
 
+    public static void logInfo(String message) {
+        ExtentTest test = getTest();
+        if (test != null) {
+            test.info(message);
+        }
+    }
+
+    public static void logPass(String message) {
+        ExtentTest test = getTest();
+        if (test != null) {
+            test.pass(message);
+        }
+    }
+
+    public static void logFail(String message) {
+        ExtentTest test = getTest();
+        if (test != null) {
+            test.fail(message);
+        }
+    }
+
     public static void attachScreenshot(String screenshotPath) {
         try {
             getTest().addScreenCaptureFromPath(screenshotPath);

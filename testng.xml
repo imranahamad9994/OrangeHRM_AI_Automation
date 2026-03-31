@@ -8,4 +8,9 @@
             <class name="com.imran.automation.tests.auth.LoginTest"/>
         </classes>
     </test>
+    <test name="PIM Tests">
+        <classes>
+            <class name="com.imran.automation.tests.pim.PimTest"/>
+        </classes>
+    </test>
 </suite>
