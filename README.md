@@ -1,4 +1,4 @@
-# OrangeHRM AI Automation Framework
+﻿# OrangeHRM AI Automation Framework
 
 Enterprise-style UI automation framework built with Java, Selenium WebDriver, TestNG, Page Object Model, Page Factory, JSON-driven test data, Extent reporting, and cross-browser execution. This project demonstrates how modern QA automation can be designed as a scalable test engineering system rather than a collection of standalone scripts.
 
@@ -47,12 +47,6 @@ This repository reflects the kind of work expected from a QA Automation Engineer
 - Add Employee
 - Search Employee in Employee List
 
-### Practice Form
-
-- End-to-end form submission validation
-- Field-level value verification
-- Date validation with browser-compatible normalization
-
 ## Framework Capabilities
 
 - Config-driven browser and headless execution
@@ -74,7 +68,6 @@ src/main/java/com/imran/automation
 |   |-- auth
 |   |-- dashboard
 |   |-- pim
-|   |-- practice
 |-- utils
 
 src/test/java/com/imran/automation
@@ -83,7 +76,6 @@ src/test/java/com/imran/automation
 |-- tests
 |   |-- auth
 |   |-- pim
-|   |-- practice
 |-- utils
 ```
 
@@ -97,7 +89,6 @@ Example:
 
 ```properties
 baseUrl=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-practiceFormUrl=https://testautomationpractice.blogspot.com/2018/09/automation-form.html
 browser=chrome
 headless=false
 ```
@@ -108,7 +99,6 @@ JSON-driven data is stored under:
 
 - [`login-data.json`](C:/Users/Hp/OneDrive/Documents/New%20project/src/test/resources/testdata/login-data.json)
 - [`pim-employee-data.json`](C:/Users/Hp/OneDrive/Documents/New%20project/src/test/resources/testdata/pim-employee-data.json)
-- [`practice-form-data.json`](C:/Users/Hp/OneDrive/Documents/New%20project/src/test/resources/testdata/practice-form-data.json)
 
 ## How to Run
 
@@ -136,18 +126,11 @@ mvn clean test "-Dtest=com.imran.automation.tests.pim.PimTest" "-Dheadless=false
 mvn clean test "-DsuiteXmlFile=testngCrossBrowser.xml"
 ```
 
-### Run practice form suite
-
-```bash
-mvn clean test "-DsuiteXmlFile=testng-practice-form.xml"
-```
-
 ## One-Click Windows Launchers
 
 - [`run-orangehrm-tests.bat`](C:/Users/Hp/OneDrive/Documents/New%20project/run-orangehrm-tests.bat)
-- [`run-practice-form-tests.bat`](C:/Users/Hp/OneDrive/Documents/New%20project/run-practice-form-tests.bat)
 
-These allow the framework to be executed by double-clicking a batch file without manually opening a terminal.
+This allows the framework to be executed by double-clicking a batch file without manually opening a terminal.
 
 ## Reporting
 
@@ -188,12 +171,11 @@ This project was developed with an AI-assisted engineering approach focused on:
 - Improved debugging through structured reporting and targeted feedback
 - Accelerated feature expansion from auth coverage into business-module automation
 
-This is not presented as “AI replacing testing.” It demonstrates the more practical and recruiter-relevant story: using AI as a force multiplier to build automation frameworks faster, cleaner, and with stronger engineering discipline.
+This is not presented as "AI replacing testing." It demonstrates the more practical and recruiter-relevant story: using AI as a force multiplier to build automation frameworks faster, cleaner, and with stronger engineering discipline.
 
-## Demo Applications
+## Demo Application
 
 - [OrangeHRM Demo](https://opensource-demo.orangehrmlive.com/)
-- [Test Automation Practice Form](https://testautomationpractice.blogspot.com/2018/09/automation-form.html)
 
 ## Next Expansion Ideas
 
@@ -216,3 +198,4 @@ This project is a strong portfolio asset for roles such as:
 - Software Development Engineer in Test
 
 It demonstrates both hands-on automation implementation and framework-level engineering thinking.
+
