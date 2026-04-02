@@ -18,6 +18,8 @@
         <webdrivermanager.version>5.9.2</webdrivermanager.version>
         <jackson.version>2.18.3</jackson.version>
         <extentreports.version>5.1.2</extentreports.version>
+        <javafaker.version>1.0.2</javafaker.version>
+        <log4j2.version>2.24.3</log4j2.version>
         <surefire.version>3.5.2</surefire.version>
         <compiler.plugin.version>3.13.0</compiler.plugin.version>
         <clean.plugin.version>3.4.0</clean.plugin.version>
@@ -50,6 +52,26 @@
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>${extentreports.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javafaker.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
+            <version>${log4j2.version}</version>
         </dependency>
     </dependencies>
 

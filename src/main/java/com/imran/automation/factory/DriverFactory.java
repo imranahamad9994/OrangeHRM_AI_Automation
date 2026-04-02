@@ -1,6 +1,8 @@
 package com.imran.automation.factory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,6 +19,7 @@ import java.io.IOException;
 public final class DriverFactory {
 
     private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
+    private static final Logger LOGGER = LogManager.getLogger(DriverFactory.class);
 
     private DriverFactory() {
     }
@@ -24,6 +27,7 @@ public final class DriverFactory {
     public static void initializeDriver(String browser, boolean headless) {
         String browserName = browser == null ? "chrome" : browser.trim().toLowerCase();
         WebDriver driver;
+        LOGGER.info("Initializing driver. Browser: {}, headless: {}", browserName, headless);
 
         switch (browserName) {
             case "firefox":
@@ -32,6 +36,7 @@ public final class DriverFactory {
                 if (headless) {
                     firefoxOptions.addArguments("-headless");
                 }
+                LOGGER.info("Launching Firefox with options: {}", firefoxOptions.asMap());
                 driver = new FirefoxDriver(firefoxOptions);
                 break;
             case "edge":
@@ -50,6 +55,7 @@ public final class DriverFactory {
         }
 
         DRIVER.set(driver);
+        LOGGER.info("Driver initialized successfully for browser: {}", browserName);
     }
 
     public static WebDriver getDriver() {
@@ -59,6 +65,7 @@ public final class DriverFactory {
     public static void quitDriver() {
         WebDriver driver = DRIVER.get();
         if (driver != null) {
+            LOGGER.info("Quitting driver for current thread.");
             driver.quit();
             DRIVER.remove();
         }
@@ -71,7 +78,7 @@ public final class DriverFactory {
                 "--no-sandbox",
                 "--disable-gpu",
                 "--remote-allow-origins=*",
-                "--remote-debugging-port=9222",
+                "--remote-debugging-port=0",
                 "--disable-extensions",
                 "--disable-notifications",
                 "--disable-popup-blocking"
@@ -85,7 +92,7 @@ public final class DriverFactory {
                 "--disable-dev-shm-usage",
                 "--no-sandbox",
                 "--disable-gpu",
-                "--remote-debugging-port=9223",
+                "--remote-debugging-port=0",
                 "--disable-extensions",
                 "--disable-notifications",
                 "--disable-popup-blocking"
@@ -103,8 +110,10 @@ public final class DriverFactory {
         }
 
         try {
+            LOGGER.info("Launching Chrome with options: {}", primaryOptions.asMap());
             return new ChromeDriver(primaryOptions);
         } catch (SessionNotCreatedException exception) {
+            LOGGER.error("Primary Chrome session creation failed. Headless: {}", headless, exception);
             if (!headless) {
                 throw exception;
             }
@@ -112,6 +121,7 @@ public final class DriverFactory {
             ChromeOptions fallbackOptions = new ChromeOptions();
             applyChromiumDefaults(fallbackOptions);
             fallbackOptions.addArguments("--headless");
+            LOGGER.info("Retrying Chrome startup with legacy headless options: {}", fallbackOptions.asMap());
             return new ChromeDriver(fallbackOptions);
         }
     }
@@ -124,8 +134,10 @@ public final class DriverFactory {
         }
 
         try {
+            LOGGER.info("Launching Edge with options: {}", primaryOptions.asMap());
             return new EdgeDriver(primaryOptions);
         } catch (SessionNotCreatedException exception) {
+            LOGGER.error("Primary Edge session creation failed. Headless: {}", headless, exception);
             if (!headless) {
                 throw exception;
             }
@@ -133,6 +145,7 @@ public final class DriverFactory {
             EdgeOptions fallbackOptions = new EdgeOptions();
             applyChromiumDefaults(fallbackOptions);
             fallbackOptions.addArguments("--headless");
+            LOGGER.info("Retrying Edge startup with legacy headless options: {}", fallbackOptions.asMap());
             return new EdgeDriver(fallbackOptions);
         }
     }
@@ -141,8 +154,10 @@ public final class DriverFactory {
         try {
             Path tempDirectory = Files.createTempDirectory(prefix);
             tempDirectory.toFile().deleteOnExit();
+            LOGGER.info("Created temporary browser profile directory: {}", tempDirectory.toAbsolutePath());
             return tempDirectory.toAbsolutePath().toString();
         } catch (IOException exception) {
+            LOGGER.error("Unable to create temporary browser profile directory for prefix: {}", prefix, exception);
             throw new IllegalStateException("Unable to create temporary browser profile directory.", exception);
         }
     }

@@ -2,6 +2,8 @@ package com.imran.automation.utils;
 
 import com.imran.automation.constants.FrameworkConstants;
 import com.imran.automation.factory.DriverFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +19,7 @@ import java.time.format.DateTimeFormatter;
 public final class ScreenshotUtils {
 
     private static final DateTimeFormatter TIMESTAMP_FORMAT = DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss");
+    private static final Logger LOGGER = LogManager.getLogger(ScreenshotUtils.class);
 
     private ScreenshotUtils() {
     }
@@ -24,6 +27,7 @@ public final class ScreenshotUtils {
     public static String captureScreenshot(String testName) {
         WebDriver driver = DriverFactory.getDriver();
         if (driver == null || !(driver instanceof TakesScreenshot)) {
+            LOGGER.warn("Screenshot capture skipped for {} because driver is null or does not support screenshots.", testName);
             return null;
         }
 
@@ -36,9 +40,11 @@ public final class ScreenshotUtils {
 
             File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             Files.copy(source.toPath(), destination, StandardCopyOption.REPLACE_EXISTING);
+            LOGGER.info("Captured screenshot for {} at {}", testName, destination.toAbsolutePath());
 
             return destination.toFile().getAbsolutePath();
         } catch (IOException exception) {
+            LOGGER.error("Failed to capture screenshot for {}", testName, exception);
             return null;
         }
     }

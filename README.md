@@ -1,26 +1,26 @@
 ﻿# OrangeHRM AI Automation Framework
 
-Enterprise-style UI automation framework built with Java, Selenium WebDriver, TestNG, Page Object Model, Page Factory, JSON-driven test data, Extent reporting, and cross-browser execution. This project demonstrates how modern QA automation can be designed as a scalable test engineering system rather than a collection of standalone scripts.
+Enterprise-style UI automation framework built with Java, Selenium WebDriver, TestNG, Page Object Model, Page Factory, Faker-powered dynamic test data, Extent reporting, and Jenkins-ready Maven execution. This project is designed to showcase scalable test automation engineering for a real HR web application, not just isolated Selenium scripts.
 
 ## Recruiter Snapshot
 
-- Built for real-world web application automation using reusable framework design
-- Covers authentication, dashboard validation, logout, invalid login handling, and PIM employee workflows
-- Uses data-driven architecture for maintainable test expansion
+- Built as a modular, production-style automation framework using Java, Selenium, TestNG, Maven, POM, and Page Factory
+- Covers business-critical OrangeHRM flows across Authentication, Dashboard, PIM, and Admin modules
+- Includes full lifecycle validation for employee management and system user management
+- Uses AI-assisted engineering patterns to accelerate framework design, debugging, and maintainable test expansion
 - Supports headed and headless execution through configuration
-- Includes Extent reporting, screenshot-on-failure support, and console-level visibility logs
-- Designed for CI/CD execution through Maven and Jenkins-friendly plugin configuration
-- Demonstrates AI-assisted test engineering workflow for faster framework design, cleaner abstraction, and stronger maintainability
+- Includes Extent reporting, screenshot-on-failure support, structured logs, and one-click Windows execution
+- Prepared for CI/CD execution with Jenkins-friendly Maven plugin configuration
 
-## Why this project stands out
+## Why This Project Stands Out
 
-This repository reflects the kind of work expected from a QA Automation Engineer or SDET working on production-grade test automation:
+This repository reflects the kind of framework thinking expected from a QA Automation Engineer or SDET working on enterprise applications:
 
-- Modular automation architecture with clean separation of pages, tests, models, listeners, and utilities
-- Resume-aligned stack: Selenium, Java, TestNG, Maven, Page Object Model, Data Driven Framework, Extent Reports, Jenkins-ready execution
-- Business-flow validation, not just toy assertions
-- Extensible design for adding more OrangeHRM modules like Leave, Admin, Recruitment, and Performance
-- AI-assisted implementation mindset focused on productivity, test design quality, and framework scalability
+- Clean separation of concerns across pages, tests, models, listeners, utilities, and configuration
+- Strong resume-aligned stack: Selenium, Java, TestNG, Maven, POM, Data Driven Framework, Extent Reports, Jenkins readiness
+- Real business workflow automation instead of only basic login assertions
+- Dynamic test data generation using Faker for more realistic and repeatable lifecycle scenarios
+- AI-assisted implementation approach focused on speed, clarity, reusability, and debugging efficiency
 
 ## Technology Stack
 
@@ -31,30 +31,48 @@ This repository reflects the kind of work expected from a QA Automation Engineer
 - WebDriverManager
 - Page Object Model (POM)
 - Page Factory
-- JSON Data Provider
+- Jackson JSON data handling
+- Java Faker
 - Extent Reports
+- Log4j2
 - Cross-browser support for Chrome, Firefox, and Edge
 
 ## Current Functional Coverage
 
-### OrangeHRM
+### Authentication and Dashboard
 
 - Valid login
 - Invalid login validation
 - Dashboard UI visibility validation
 - Logout flow
-- PIM module navigation
-- Add Employee
-- Search Employee in Employee List
+- Console and Extent step logging for dashboard element checks
+
+### PIM Module
+
+- Add random employee
+- Search employee by employee ID
+- Edit employee details with new Faker-generated values
+- Delete employee
+- End-to-end Add + Edit + Delete employee lifecycle validation
+
+### Admin Module
+
+- Create random employee as a dependency for Admin user mapping
+- Add random system user linked to that employee
+- Search system user by username
+- Edit system user role, status, and username
+- Delete system user
+- End-to-end Add + Edit + Delete system user lifecycle validation
 
 ## Framework Capabilities
 
-- Config-driven browser and headless execution
-- TestNG parameterization for cross-browser runs
-- Extent report generation with automatic open after successful execution
+- Config-driven browser and headed/headless execution
+- TestNG parameterization for browser selection
+- Extent report generation with a single auto-open action after full suite completion
 - Screenshot capture on failure using `TakesScreenshot`
-- Dashboard-level console and report step logging
-- Unique test data generation for employee creation workflows
+- Log4j2 logging with file output in the `logs` folder
+- Faker-based dynamic test data generation for lifecycle workflows
+- One-click Windows batch execution
 - Jenkins-friendly Maven plugin setup
 
 ## Project Structure
@@ -65,8 +83,11 @@ src/main/java/com/imran/automation
 |-- factory
 |-- models
 |-- pages
+|   |-- admin
 |   |-- auth
+|   |-- base
 |   |-- dashboard
+|   |-- leave
 |   |-- pim
 |-- utils
 
@@ -74,7 +95,9 @@ src/test/java/com/imran/automation
 |-- base
 |-- listeners
 |-- tests
+|   |-- admin
 |   |-- auth
+|   |-- leave
 |   |-- pim
 |-- utils
 ```
@@ -95,55 +118,84 @@ headless=false
 
 ## Test Data
 
-JSON-driven data is stored under:
+Structured JSON test data is stored under:
 
 - [`login-data.json`](C:/Users/Hp/OneDrive/Documents/New%20project/src/test/resources/testdata/login-data.json)
 - [`pim-employee-data.json`](C:/Users/Hp/OneDrive/Documents/New%20project/src/test/resources/testdata/pim-employee-data.json)
 
-## How to Run
+Dynamic lifecycle data such as employee names and admin usernames is generated at runtime with Faker to keep the flows unique and portfolio-realistic.
 
-### Run main OrangeHRM suite
+## How To Run
+
+### Run the main OrangeHRM regression suite
 
 ```bash
 mvn clean test
 ```
 
-### Run only dashboard visibility test in headed mode
+### Run the full suite in headed mode
+
+```bash
+mvn clean test "-Dheadless=false"
+```
+
+### Run only the dashboard visibility test
 
 ```bash
 mvn clean test "-Dtest=com.imran.automation.tests.auth.LoginTest#verifyDashboardElementsVisible" "-Dheadless=false"
 ```
 
-### Run PIM test only
+### Run only the PIM employee lifecycle test
 
 ```bash
-mvn clean test "-Dtest=com.imran.automation.tests.pim.PimTest" "-Dheadless=false"
+mvn clean test "-Dtest=com.imran.automation.tests.pim.PimTest#verifyAddEditAndDeleteEmployeeLifecycle" "-Dheadless=false"
 ```
 
-### Run cross-browser suite
+### Run only the Admin user lifecycle test
+
+```bash
+mvn clean test "-Dtest=com.imran.automation.tests.admin.AdminTest#verifyAddEditAndDeleteUserLifecycle" "-Dheadless=false"
+```
+
+### Run the cross-browser suite
 
 ```bash
 mvn clean test "-DsuiteXmlFile=testngCrossBrowser.xml"
 ```
 
-## One-Click Windows Launchers
+## Active Main Suite
+
+The current main TestNG regression suite includes:
+
+- Login Tests
+- PIM Tests
+- Admin Tests
+
+Leave automation remains in the codebase for future stabilization, but it is temporarily excluded from the main suite to keep regular regression runs reliable.
+
+## One-Click Windows Launcher
 
 - [`run-orangehrm-tests.bat`](C:/Users/Hp/OneDrive/Documents/New%20project/run-orangehrm-tests.bat)
 
 This allows the framework to be executed by double-clicking a batch file without manually opening a terminal.
 
-## Reporting
+## Reporting and Logs
 
 Extent HTML report is generated at:
 
 [`target/extent-reports/extent-report.html`](C:/Users/Hp/OneDrive/Documents/New%20project/target/extent-reports/extent-report.html)
 
-Report features include:
+Framework execution logs are written to:
+
+[`logs/automation.log`](C:/Users/Hp/OneDrive/Documents/New%20project/logs/automation.log)
+
+Current reporting features include:
 
 - Test-level pass/fail reporting
-- Per-step dashboard validation logs
+- Dashboard element pass/fail step logs
 - Screenshot attachments on failure
-- Local auto-open after successful execution
+- Single report auto-open at the end of the full suite
+- Debug-friendly file logging for driver lifecycle and module workflows
 
 ## CI/CD Readiness
 
@@ -163,15 +215,15 @@ mvn clean test "-DsuiteXmlFile=testngCrossBrowser.xml" -Dheadless=true
 
 ## AI-Assisted Engineering Value
 
-This project was developed with an AI-assisted engineering approach focused on:
+This project was built using an AI-assisted engineering workflow focused on:
 
-- Faster framework scaffolding
-- Cleaner page abstraction and reusable utilities
-- Better test design iteration
-- Improved debugging through structured reporting and targeted feedback
-- Accelerated feature expansion from auth coverage into business-module automation
+- rapid framework scaffolding
+- cleaner abstraction of page objects and utilities
+- faster debugging through structured diagnostics
+- better iteration on selectors and workflow design
+- accelerated expansion from auth testing into business-module lifecycle automation
 
-This is not presented as "AI replacing testing." It demonstrates the more practical and recruiter-relevant story: using AI as a force multiplier to build automation frameworks faster, cleaner, and with stronger engineering discipline.
+This project positions AI as an engineering force multiplier, helping produce cleaner and more maintainable automation faster, while still keeping the framework grounded in solid QA and SDET practices.
 
 ## Demo Application
 
@@ -179,13 +231,12 @@ This is not presented as "AI replacing testing." It demonstrates the more practi
 
 ## Next Expansion Ideas
 
-- Edit Employee in PIM
-- Delete Employee in PIM
-- Leave module automation
-- Admin user management flows
+- Stabilize and re-enable Leave module flows in the main suite
+- Add Admin negative validations and duplicate-user checks
+- Add PIM personal details assertions after edit
 - Parallel cross-browser execution
-- GitHub Actions or Jenkins pipeline as code
-- Allure or advanced reporting integration
+- Add Jenkinsfile or GitHub Actions pipeline
+- Add Allure or advanced dashboard reporting
 
 ## Ideal Use Case
 

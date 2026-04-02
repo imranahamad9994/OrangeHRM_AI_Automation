@@ -12,5 +12,5 @@ public final class FrameworkConstants {
     public static final String INVALID_CREDENTIALS_MESSAGE = "Invalid credentials";
     public static final String EXTENT_REPORT_PATH = "target/extent-reports/extent-report.html";
     public static final String SCREENSHOT_DIRECTORY = "target/extent-reports/screenshots";
-    public static final int EXPLICIT_WAIT_SECONDS = 10;
+    public static final int EXPLICIT_WAIT_SECONDS = 20;
 }

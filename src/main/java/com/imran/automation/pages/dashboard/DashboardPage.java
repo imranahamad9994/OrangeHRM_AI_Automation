@@ -81,6 +81,10 @@ public class DashboardPage extends BasePage {
                 && isQuickLaunchWidgetVisible();
     }
 
+    public String getLoggedInUserName() {
+        return getText(userDropdown);
+    }
+
     public void logout() {
         click(userDropdown);
         click(logoutLink);

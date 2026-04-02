@@ -13,4 +13,9 @@
             <class name="com.imran.automation.tests.pim.PimTest"/>
         </classes>
     </test>
+    <test name="Admin Tests">
+        <classes>
+            <class name="com.imran.automation.tests.admin.AdminTest"/>
+        </classes>
+    </test>
 </suite>
