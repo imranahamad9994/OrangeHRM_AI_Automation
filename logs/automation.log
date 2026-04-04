@@ -1,227 +1,67 @@
-2026-04-02 09:55:00.567 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 09:55:00.592 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 09:55:02.262 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 09:55:02.302 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 09:55:02.317 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-15243354944355968539
-2026-04-02 09:55:02.322 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-15243354944355968539, --start-maximized], extensions=[]}}
-2026-04-02 09:55:04.270 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 09:55:10.080 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 09:55:35.857 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 09:55:35.857 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 09:56:25.372 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 09:56:25.386 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 09:56:25.919 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 09:56:25.954 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 09:56:25.969 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-1877357524471266776
-2026-04-02 09:56:25.969 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-1877357524471266776, --start-maximized], extensions=[]}}
-2026-04-02 09:56:27.387 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 09:56:32.713 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 09:56:56.000 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'BaileyAdmin993137': [Searching....]
-2026-04-02 09:56:56.011 [main] WARN  c.i.a.p.a.UserFormPage - Exact employee autocomplete match was not found. Selecting the first available option instead.
-2026-04-02 09:57:07.186 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 09:57:07.186 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 09:57:48.058 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 09:57:48.063 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 09:57:48.596 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 09:57:48.648 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 09:57:48.656 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-1904781196087849290
-2026-04-02 09:57:48.656 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-1904781196087849290, --start-maximized], extensions=[]}}
-2026-04-02 09:57:50.414 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 09:57:55.368 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 09:58:29.118 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'NoahAdmin075692': [NoahAdmin075692 Sal Witting075692]
-2026-04-02 09:58:40.290 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 09:58:40.290 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 09:59:35.573 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 09:59:35.573 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 09:59:36.080 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 09:59:36.123 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 09:59:36.140 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-663721549410073304
-2026-04-02 09:59:36.142 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-663721549410073304, --start-maximized], extensions=[]}}
-2026-04-02 09:59:37.382 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 09:59:43.495 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:00:23.057 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:00:23.057 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:01:18.496 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:01:18.501 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:01:18.965 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:01:19.004 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:01:19.011 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-12602502818859067158
-2026-04-02 10:01:19.011 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-12602502818859067158, --start-maximized], extensions=[]}}
-2026-04-02 10:01:20.356 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:01:30.706 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:02:22.192 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'SydneyAdmin291006': [SydneyAdmin291006 Scott Gaylord291006]
-2026-04-02 10:02:43.264 [main] ERROR c.i.a.p.a.UserFormPage - Add/Edit User form did not save successfully. URL: https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser | Selected role: ESS | Employee field: SydneyAdmin291006 | Selected status: Enabled | Username: imrancreatewilton37718700 | Field errors: [Invalid]
-2026-04-02 10:02:43.296 [main] ERROR c.i.a.p.a.UserFormPage - Captured admin user form page source at C:\Users\Hp\OneDrive\Documents\New project\target\admin-user-form-page-source.html
-2026-04-02 10:02:43.311 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:02:43.311 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:03:29.778 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:03:29.781 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:03:30.231 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:03:30.282 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:03:30.284 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-197984808987403920
-2026-04-02 10:03:30.291 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-197984808987403920, --start-maximized], extensions=[]}}
-2026-04-02 10:03:31.524 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:03:37.895 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:04:10.243 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'SammieAdmin418181': [SammieAdmin418181 Romeo Cummings418181]
-2026-04-02 10:04:42.829 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:04:42.830 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:05:06.139 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:05:06.150 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:05:06.600 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:05:06.649 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:05:06.649 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-5983980871768606403
-2026-04-02 10:05:06.649 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-5983980871768606403, --start-maximized], extensions=[]}}
-2026-04-02 10:05:07.844 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:05:12.804 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:05:37.545 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'BrindaAdmin513104': [BrindaAdmin513104 Bertram Blanda513104]
-2026-04-02 10:06:10.965 [main] ERROR c.i.a.p.a.UserFormPage - Add/Edit User form did not save successfully. URL: https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser/94 | Selected role: Admin | Employee field: BrindaAdmin513104 Bertram Blanda513104 | Selected status: Disabled | Username: imrancreatetyler36670300imraneditanibal37379300 | Field errors: []
-2026-04-02 10:06:10.998 [main] ERROR c.i.a.p.a.UserFormPage - Captured admin user form page source at C:\Users\Hp\OneDrive\Documents\New project\target\admin-user-form-page-source.html
-2026-04-02 10:06:11.018 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:06:11.018 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:06:35.933 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:06:35.945 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:06:36.457 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:06:36.482 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:06:36.501 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-3613893397871612785
-2026-04-02 10:06:36.501 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-3613893397871612785, --start-maximized], extensions=[]}}
-2026-04-02 10:06:37.721 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:06:55.625 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:07:39.803 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'DustyAdmin615958': [DustyAdmin615958 Brandy Walsh615958]
-2026-04-02 10:08:22.557 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:08:22.557 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:09:14.253 [main] INFO  o.t.i.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
-2026-04-02 10:09:14.551 [main] INFO  c.i.a.l.TestListener - Starting TestNG context: Login Tests
-2026-04-02 10:09:14.784 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:09:14.784 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:09:15.248 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:09:15.290 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:09:15.290 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-5097784195793930186
-2026-04-02 10:09:15.302 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-5097784195793930186, --start-maximized], extensions=[]}}
-2026-04-02 10:09:16.634 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:09:22.672 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:09:22.921 [main] INFO  c.i.a.l.TestListener - Test started: verifyDashboardElementsVisible
-2026-04-02 10:09:30.306 [main] INFO  c.i.a.l.TestListener - Test passed: verifyDashboardElementsVisible
-2026-04-02 10:09:30.310 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:09:30.310 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:09:30.592 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:09:30.592 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:09:30.608 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:09:30.624 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:09:30.624 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-10493468687693422206
-2026-04-02 10:09:30.624 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-10493468687693422206, --start-maximized], extensions=[]}}
-2026-04-02 10:09:31.422 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:09:36.961 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:09:36.962 [main] INFO  c.i.a.l.TestListener - Test started: verifyInvalidLogin
-2026-04-02 10:09:44.069 [main] INFO  c.i.a.l.TestListener - Test passed: verifyInvalidLogin
-2026-04-02 10:09:44.069 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:09:44.069 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:09:44.358 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:09:44.358 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:09:44.379 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:09:44.403 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:09:44.405 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-17806585813555232589
-2026-04-02 10:09:44.405 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-17806585813555232589, --start-maximized], extensions=[]}}
-2026-04-02 10:09:45.384 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:10:16.399 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:10:16.400 [main] INFO  c.i.a.l.TestListener - Test started: verifyInvalidLogin
-2026-04-02 10:10:22.356 [main] INFO  c.i.a.l.TestListener - Test passed: verifyInvalidLogin
-2026-04-02 10:10:22.356 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:10:22.356 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:10:22.623 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:10:22.623 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:10:22.639 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:10:22.655 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:10:22.655 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-5805529913212361027
-2026-04-02 10:10:22.655 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-5805529913212361027, --start-maximized], extensions=[]}}
-2026-04-02 10:10:23.456 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:10:31.264 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:10:31.265 [main] INFO  c.i.a.l.TestListener - Test started: verifySuccessfulLogout
-2026-04-02 10:10:42.246 [main] INFO  c.i.a.l.TestListener - Test passed: verifySuccessfulLogout
-2026-04-02 10:10:42.246 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:10:42.246 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:10:42.468 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:10:42.468 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:10:42.484 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:10:42.484 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:10:42.484 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-7604515691204517563
-2026-04-02 10:10:42.484 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-7604515691204517563, --start-maximized], extensions=[]}}
-2026-04-02 10:10:43.398 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:10:53.449 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:10:53.450 [main] INFO  c.i.a.l.TestListener - Test started: verifyValidLogin
-2026-04-02 10:11:00.524 [main] INFO  c.i.a.l.TestListener - Test passed: verifyValidLogin
-2026-04-02 10:11:00.525 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:11:00.525 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:11:00.740 [main] INFO  c.i.a.l.TestListener - Finishing TestNG context: Login Tests. Passed: 5, Failed: 0, Skipped: 0
-2026-04-02 10:11:01.415 [main] INFO  c.i.a.l.TestListener - Starting TestNG context: PIM Tests
-2026-04-02 10:11:01.420 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:11:01.420 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:11:01.445 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:11:01.479 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:11:01.480 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-6344563498629452443
-2026-04-02 10:11:01.481 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-6344563498629452443, --start-maximized], extensions=[]}}
-2026-04-02 10:11:02.756 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:11:09.702 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:11:09.703 [main] INFO  c.i.a.l.TestListener - Test started: verifyAddEditAndDeleteEmployeeLifecycle
-2026-04-02 10:12:32.549 [main] INFO  c.i.a.l.TestListener - Test passed: verifyAddEditAndDeleteEmployeeLifecycle
-2026-04-02 10:12:32.550 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:12:32.550 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:12:32.767 [main] INFO  c.i.a.l.TestListener - Finishing TestNG context: PIM Tests. Passed: 1, Failed: 0, Skipped: 0
-2026-04-02 10:12:32.854 [main] INFO  c.i.a.l.TestListener - Starting TestNG context: Admin Tests
-2026-04-02 10:12:32.854 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:12:32.854 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:12:32.872 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:12:32.895 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:12:32.897 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-2454645789983492485
-2026-04-02 10:12:32.897 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-2454645789983492485, --start-maximized], extensions=[]}}
-2026-04-02 10:12:33.819 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:12:40.158 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:12:40.159 [main] INFO  c.i.a.l.TestListener - Test started: verifyAddEditAndDeleteUserLifecycle
-2026-04-02 10:13:13.905 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'DarrinAdmin960161': [DarrinAdmin960161 Denver Crist960161]
-2026-04-02 10:13:48.010 [main] INFO  c.i.a.l.TestListener - Test passed: verifyAddEditAndDeleteUserLifecycle
-2026-04-02 10:13:48.011 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:13:48.011 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:13:48.266 [main] INFO  c.i.a.l.TestListener - Finishing TestNG context: Admin Tests. Passed: 1, Failed: 0, Skipped: 0
-2026-04-02 10:13:48.348 [main] INFO  c.i.a.l.TestListener - Starting TestNG context: Leave Tests
-2026-04-02 10:13:48.348 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:13:48.348 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:13:48.361 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:13:48.382 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:13:48.382 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-7923458058697166660
-2026-04-02 10:13:48.382 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-7923458058697166660, --start-maximized], extensions=[]}}
-2026-04-02 10:13:49.250 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:13:55.778 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:13:55.778 [main] INFO  c.i.a.l.TestListener - Test started: verifyApplyVerifyAndCancelLeave
-2026-04-02 10:13:55.781 [main] INFO  c.i.a.t.l.LeaveTest - Starting Leave workflow test. Leave date: 2026-04-03, comment marker: AutoLeave-333658
-2026-04-02 10:14:02.277 [main] INFO  c.i.a.t.l.LeaveTest - Logged into OrangeHRM with visible user name: manda user
-2026-04-02 10:14:02.277 [main] INFO  c.i.a.p.l.LeavePage - Opening Leave module from side menu.
-2026-04-02 10:14:09.171 [main] INFO  c.i.a.p.l.LeavePage - Leave module opened. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/leave/viewLeaveList
-2026-04-02 10:14:10.771 [main] INFO  c.i.a.t.l.LeaveTest - Leave module opened successfully.
-2026-04-02 10:14:10.771 [main] INFO  c.i.a.p.l.LeavePage - Opening Entitlements -> Add Entitlements.
-2026-04-02 10:14:12.582 [main] INFO  c.i.a.p.l.LeavePage - Add Entitlements opened. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/leave/addLeaveEntitlement
-2026-04-02 10:14:12.622 [main] INFO  c.i.a.t.l.LeaveTest - Add Entitlement URL: https://opensource-demo.orangehrmlive.com/web/index.php/leave/addLeaveEntitlement
-2026-04-02 10:14:12.650 [main] INFO  c.i.a.t.l.LeaveTest - Add Entitlement page text length: 0
-2026-04-02 10:14:12.659 [main] INFO  c.i.a.t.l.LeaveTest - Saved Add Entitlement page source to target/leave-add-entitlement-page-source.html
-2026-04-02 10:14:13.729 [main] INFO  c.i.a.p.l.AddEntitlementPage - Add Entitlement page loaded status: true, current URL: https://opensource-demo.orangehrmlive.com/web/index.php/leave/addLeaveEntitlement
-2026-04-02 10:14:13.729 [main] INFO  c.i.a.p.l.LeavePage - Opening Apply Leave tab.
-2026-04-02 10:14:14.809 [main] INFO  c.i.a.p.l.LeavePage - Apply Leave tab opened. Current URL: https://opensource-demo.orangehrmlive.com/web/index.php/leave/applyLeave
-2026-04-02 10:14:15.941 [main] INFO  c.i.a.t.l.LeaveTest - Apply Leave URL: https://opensource-demo.orangehrmlive.com/web/index.php/leave/applyLeave
-2026-04-02 10:14:15.947 [main] INFO  c.i.a.t.l.LeaveTest - Apply Leave DOM diagnostics: {"readyState":"complete","bodyTextIncludesApplyLeave":true,"selectWrapperCount":1,"selectTextInputCount":1,"dateInputCount":2,"iframeCount":0}
-2026-04-02 10:14:15.982 [main] INFO  c.i.a.t.l.LeaveTest - Saved Apply Leave page source to target/leave-apply-page-source.html
-2026-04-02 10:14:16.054 [main] INFO  c.i.a.p.l.ApplyLeavePage - Applying leave. Date: 2026-04-03, comment: AutoLeave-333658
-2026-04-02 10:14:16.070 [main] INFO  c.i.a.p.l.ApplyLeavePage - Leave type dropdown is present. Opening dropdown now.
-2026-04-02 10:14:36.227 [main] ERROR c.i.a.p.l.ApplyLeavePage - Script wait failed. Message: Leave type options did not appear after opening the dropdown.
-2026-04-02 10:14:36.227 [main] ERROR c.i.a.l.TestListener - Test failed: verifyApplyVerifyAndCancelLeave
-java.lang.IllegalStateException: Leave type options did not appear after opening the dropdown.
-	at com.imran.automation.pages.leave.ApplyLeavePage.waitForScriptCondition(ApplyLeavePage.java:148)
-	at com.imran.automation.pages.leave.ApplyLeavePage.selectFirstAvailableLeaveType(ApplyLeavePage.java:103)
-	at com.imran.automation.pages.leave.ApplyLeavePage.applyLeave(ApplyLeavePage.java:44)
-	at com.imran.automation.tests.leave.LeaveTest.verifyApplyVerifyAndCancelLeave(LeaveTest.java:71)
+2026-04-03 19:20:32.924 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:20:32.949 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:20:33.505 [main] WARN  i.g.b.w.c.ResolutionCache - Exception writing resolution cache as a properties file java.io.FileNotFoundException
+2026-04-03 19:20:33.577 [main] WARN  i.g.b.w.v.VersionDetector - Error reading commands.properties, using local instead
+2026-04-03 19:20:33.715 [main] WARN  i.g.b.w.c.ResolutionCache - Exception writing resolution cache as a properties file java.io.FileNotFoundException
+2026-04-03 19:20:33.746 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:33.762 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_146 to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:33.777 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:33.793 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:33.825 [main] WARN  i.g.b.w.WebDriverManager - There was an error managing chromedriver (latest version) (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information) ... trying again using latest driver stored in cache
+2026-04-03 19:20:33.856 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:33.877 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:33.903 [main] ERROR i.g.b.w.WebDriverManager - There was an error managing chromedriver (latest version) (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+org.apache.hc.client5.http.HttpHostConnectException: Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:146)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+	at io.github.bonigarcia.wdm.online.Parser.parseJson(Parser.java:54)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:117)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at com.imran.automation.factory.DriverFactory.initializeDriver(DriverFactory.java:48)
+	at com.imran.automation.base.BaseTest.setUp(BaseTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -241,108 +81,349 @@ java.lang.IllegalStateException: Leave type options did not appear after opening
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 	at org.testng.TestNG.runSuites(TestNG.java:1112)
 	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2026-04-02 10:14:36.308 [main] INFO  c.i.a.u.ScreenshotUtils - Captured screenshot for verifyApplyVerifyAndCancelLeave at C:\Users\Hp\OneDrive\Documents\New project\target\extent-reports\screenshots\verifyApplyVerifyAndCancelLeave_20260402_101436.png
-2026-04-02 10:14:36.308 [main] INFO  c.i.a.l.TestListener - Attached failure screenshot for verifyApplyVerifyAndCancelLeave at C:\Users\Hp\OneDrive\Documents\New project\target\extent-reports\screenshots\verifyApplyVerifyAndCancelLeave_20260402_101436.png
-2026-04-02 10:14:36.324 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:14:36.324 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:14:36.535 [main] INFO  c.i.a.l.TestListener - Finishing TestNG context: Leave Tests. Passed: 0, Failed: 1, Skipped: 0
-2026-04-02 10:18:13.655 [main] INFO  o.t.i.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
-2026-04-02 10:18:13.930 [main] INFO  c.i.a.l.TestListener - Starting TestNG context: Login Tests
-2026-04-02 10:18:14.217 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:18:14.217 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:18:14.647 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:18:14.680 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:18:14.688 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-16371968962553181118
-2026-04-02 10:18:14.688 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-16371968962553181118, --start-maximized], extensions=[]}}
-2026-04-02 10:18:15.908 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:18:24.528 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:18:24.869 [main] INFO  c.i.a.l.TestListener - Test started: verifyDashboardElementsVisible
-2026-04-02 10:18:30.056 [main] INFO  c.i.a.l.TestListener - Test passed: verifyDashboardElementsVisible
-2026-04-02 10:18:30.058 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:18:30.059 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:18:30.769 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:18:30.769 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:18:30.800 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:18:30.839 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:18:30.839 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-6676683335708825115
-2026-04-02 10:18:30.839 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-6676683335708825115, --start-maximized], extensions=[]}}
-2026-04-02 10:18:31.772 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:18:38.515 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:18:38.516 [main] INFO  c.i.a.l.TestListener - Test started: verifyInvalidLogin
-2026-04-02 10:18:44.735 [main] INFO  c.i.a.l.TestListener - Test passed: verifyInvalidLogin
-2026-04-02 10:18:44.736 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:18:44.736 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:18:44.942 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:18:44.942 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:18:44.960 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:18:44.973 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:18:44.982 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-4281859308804728780
-2026-04-02 10:18:44.982 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-4281859308804728780, --start-maximized], extensions=[]}}
-2026-04-02 10:18:45.845 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:18:52.130 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:18:52.131 [main] INFO  c.i.a.l.TestListener - Test started: verifyInvalidLogin
-2026-04-02 10:18:56.383 [main] INFO  c.i.a.l.TestListener - Test passed: verifyInvalidLogin
-2026-04-02 10:18:56.383 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:18:56.383 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:18:56.553 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:18:56.553 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:18:56.565 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:18:56.576 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:18:56.577 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-3528582499339618897
-2026-04-02 10:18:56.577 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-3528582499339618897, --start-maximized], extensions=[]}}
-2026-04-02 10:18:57.351 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:19:04.410 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:19:04.411 [main] INFO  c.i.a.l.TestListener - Test started: verifySuccessfulLogout
-2026-04-02 10:19:15.456 [main] INFO  c.i.a.l.TestListener - Test passed: verifySuccessfulLogout
-2026-04-02 10:19:15.456 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:19:15.456 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:19:15.723 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:19:15.723 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:19:15.746 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:19:15.769 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:19:15.770 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-17901143823857607493
-2026-04-02 10:19:15.770 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-17901143823857607493, --start-maximized], extensions=[]}}
-2026-04-02 10:19:16.996 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:19:23.817 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:19:23.818 [main] INFO  c.i.a.l.TestListener - Test started: verifyValidLogin
-2026-04-02 10:19:29.568 [main] INFO  c.i.a.l.TestListener - Test passed: verifyValidLogin
-2026-04-02 10:19:29.569 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:19:29.570 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:19:29.786 [main] INFO  c.i.a.l.TestListener - Finishing TestNG context: Login Tests. Passed: 5, Failed: 0, Skipped: 0
-2026-04-02 10:19:30.175 [main] INFO  c.i.a.l.TestListener - Starting TestNG context: PIM Tests
-2026-04-02 10:19:30.175 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:19:30.175 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:19:30.193 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:19:30.210 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:19:30.210 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-16422593335473479089
-2026-04-02 10:19:30.210 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-16422593335473479089, --start-maximized], extensions=[]}}
-2026-04-02 10:19:31.008 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:19:38.652 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:19:38.654 [main] INFO  c.i.a.l.TestListener - Test started: verifyAddEditAndDeleteEmployeeLifecycle
-2026-04-02 10:20:28.669 [main] INFO  c.i.a.l.TestListener - Test passed: verifyAddEditAndDeleteEmployeeLifecycle
-2026-04-02 10:20:28.671 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:20:28.671 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:20:28.905 [main] INFO  c.i.a.l.TestListener - Finishing TestNG context: PIM Tests. Passed: 1, Failed: 0, Skipped: 0
-2026-04-02 10:20:28.942 [main] INFO  c.i.a.l.TestListener - Starting TestNG context: Admin Tests
-2026-04-02 10:20:28.943 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
-2026-04-02 10:20:28.944 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
-2026-04-02 10:20:28.959 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
-2026-04-02 10:20:28.971 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
-2026-04-02 10:20:28.971 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-8175592881760632188
-2026-04-02 10:20:28.971 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-8175592881760632188, --start-maximized], extensions=[]}}
-2026-04-02 10:20:29.812 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
-2026-04-02 10:20:37.674 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-04-02 10:20:37.675 [main] INFO  c.i.a.l.TestListener - Test started: verifyAddEditAndDeleteUserLifecycle
-2026-04-02 10:21:26.911 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'RolandAdmin437677': [RolandAdmin437677 Jeanmarie Kshlerin437677]
-2026-04-02 10:22:05.914 [main] INFO  c.i.a.l.TestListener - Test passed: verifyAddEditAndDeleteUserLifecycle
-2026-04-02 10:22:05.915 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
-2026-04-02 10:22:05.915 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
-2026-04-02 10:22:06.154 [main] INFO  c.i.a.l.TestListener - Finishing TestNG context: Admin Tests. Passed: 1, Failed: 0, Skipped: 0
-2026-04-02 10:22:06.275 [main] INFO  c.i.a.l.TestListener - TestNG execution finished. Opening consolidated Extent report once.
+2026-04-03 19:20:33.912 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:20:33.912 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:20:33.917 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:20:33.934 [main] WARN  i.g.b.w.c.ResolutionCache - Exception writing resolution cache as a properties file java.io.FileNotFoundException
+2026-04-03 19:20:33.950 [main] WARN  i.g.b.w.v.VersionDetector - Error reading commands.properties, using local instead
+2026-04-03 19:20:34.088 [main] WARN  i.g.b.w.c.ResolutionCache - Exception writing resolution cache as a properties file java.io.FileNotFoundException
+2026-04-03 19:20:34.096 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.102 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_146 to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.108 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.111 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.125 [main] WARN  i.g.b.w.WebDriverManager - There was an error managing chromedriver (latest version) (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information) ... trying again using latest driver stored in cache
+2026-04-03 19:20:34.137 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.141 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.153 [main] ERROR i.g.b.w.WebDriverManager - There was an error managing chromedriver (latest version) (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+org.apache.hc.client5.http.HttpHostConnectException: Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:146)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+	at io.github.bonigarcia.wdm.online.Parser.parseJson(Parser.java:54)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:117)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at com.imran.automation.factory.DriverFactory.initializeDriver(DriverFactory.java:48)
+	at com.imran.automation.base.BaseTest.setUp(BaseTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-04-03 19:20:34.165 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:20:34.169 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:20:34.169 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:20:34.196 [main] WARN  i.g.b.w.c.ResolutionCache - Exception writing resolution cache as a properties file java.io.FileNotFoundException
+2026-04-03 19:20:34.200 [main] WARN  i.g.b.w.v.VersionDetector - Error reading commands.properties, using local instead
+2026-04-03 19:20:34.325 [main] WARN  i.g.b.w.c.ResolutionCache - Exception writing resolution cache as a properties file java.io.FileNotFoundException
+2026-04-03 19:20:34.325 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.325 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_146 to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.341 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.357 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.373 [main] WARN  i.g.b.w.WebDriverManager - There was an error managing chromedriver (latest version) (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information) ... trying again using latest driver stored in cache
+2026-04-03 19:20:34.389 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading CfT URL ('https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json') to get version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.389 [main] WARN  i.g.b.w.v.VersionDetector - Exception reading https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE to get latest version of chromedriver (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+2026-04-03 19:20:34.405 [main] ERROR i.g.b.w.WebDriverManager - There was an error managing chromedriver (latest version) (Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information)
+org.apache.hc.client5.http.HttpHostConnectException: Connect to http://kubernetes.docker.internal:9 [kubernetes.docker.internal/127.0.0.1] failed: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:146)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:157)
+	at io.github.bonigarcia.wdm.online.Parser.parseJson(Parser.java:54)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:117)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1442)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1268)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1184)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1415)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1190)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+	at com.imran.automation.factory.DriverFactory.initializeDriver(DriverFactory.java:48)
+	at com.imran.automation.base.BaseTest.setUp(BaseTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-04-03 19:20:34.410 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:20:34.531 [main] ERROR o.t.r.j.Main - C:\Users\Hp\OneDrive\Documents\New project\target\surefire-reports\jquery-3.6.0.min.js
+java.nio.file.AccessDeniedException: C:\Users\Hp\OneDrive\Documents\New project\target\surefire-reports\jquery-3.6.0.min.js
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:275)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at java.base/java.nio.file.Files.copy(Files.java:3148)
+	at org.testng.reporters.jq.Main.generateReport(Main.java:95)
+	at org.testng.TestNG.generateReports(TestNG.java:1160)
+	at org.testng.TestNG.run(TestNG.java:1085)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-04-03 19:22:26.668 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:22:26.668 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:22:28.433 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:22:28.497 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:22:28.516 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-9411700994421216031
+2026-04-03 19:22:28.519 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-9411700994421216031, --start-maximized], extensions=[]}}
+2026-04-03 19:22:30.141 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:22:34.906 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:22:53.138 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'ManAdmin355156': [ManAdmin355156 Sarina Stoltenberg355156]
+2026-04-03 19:23:19.931 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:23:19.931 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:23:20.776 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:23:20.777 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:23:20.800 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:23:20.852 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:23:20.853 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-822056947910344973
+2026-04-03 19:23:20.853 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-822056947910344973, --start-maximized], extensions=[]}}
+2026-04-03 19:23:21.718 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:23:24.589 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:23:50.758 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'BradleyAdmin404591': [BradleyAdmin404591 Lanette Bahringer404591]
+2026-04-03 19:24:00.709 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'JackelineAdmin404652': [JackelineAdmin404652 Myriam Flatley404652]
+2026-04-03 19:24:01.933 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:24:01.933 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:24:02.884 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:24:02.884 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:24:02.903 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:24:02.937 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:24:02.942 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-4761981147627324326
+2026-04-03 19:24:02.943 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-4761981147627324326, --start-maximized], extensions=[]}}
+2026-04-03 19:24:04.060 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:24:06.670 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:24:13.631 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:24:13.631 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:25:05.296 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:25:05.303 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:25:06.133 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:25:06.267 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:25:06.291 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-85330050740502427
+2026-04-03 19:25:06.303 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-85330050740502427, --start-maximized], extensions=[]}}
+2026-04-03 19:25:07.995 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:25:11.032 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:25:29.580 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'TijuanaAdmin511383': [TijuanaAdmin511383 Armando Price511383]
+2026-04-03 19:25:54.914 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:25:54.914 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:25:55.536 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:25:55.536 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:25:55.554 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:25:55.575 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:25:55.577 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-5024355951476977995
+2026-04-03 19:25:55.577 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-5024355951476977995, --start-maximized], extensions=[]}}
+2026-04-03 19:25:56.373 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:25:58.945 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:26:25.906 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'TalishaAdmin558947': [TalishaAdmin558947 Noble Parker558947]
+2026-04-03 19:26:35.595 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'BrittnyAdmin558992': [BrittnyAdmin558992 Felice Emmerich558992]
+2026-04-03 19:26:36.773 [main] INFO  c.i.a.p.a.UserFormPage - Validation messages after Admin user submission: [Should be at least 5 characters]
+2026-04-03 19:26:58.102 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:26:58.104 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:26:58.466 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:26:58.466 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:26:58.491 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:26:58.545 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:26:58.547 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-17186612630361121310
+2026-04-03 19:26:58.547 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-17186612630361121310, --start-maximized], extensions=[]}}
+2026-04-03 19:26:59.677 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:27:02.149 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:27:08.685 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:27:08.685 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:27:46.155 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:27:46.172 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:27:46.979 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:27:47.039 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:27:47.045 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-9065383510556389721
+2026-04-03 19:27:47.055 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-9065383510556389721, --start-maximized], extensions=[]}}
+2026-04-03 19:27:48.882 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:27:51.911 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:28:10.470 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'SantiagoAdmin672270': [SantiagoAdmin672270 Dirk Dietrich672270]
+2026-04-03 19:28:36.789 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:28:36.789 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:28:37.993 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:28:37.995 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:28:38.034 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:28:38.104 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:28:38.105 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-9134559075786408285
+2026-04-03 19:28:38.106 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-9134559075786408285, --start-maximized], extensions=[]}}
+2026-04-03 19:28:39.199 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:28:45.142 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:29:25.240 [main] ERROR c.i.a.p.p.AddEmployeePage - Add Employee did not navigate to Personal Details. URL: https://opensource-demo.orangehrmlive.com/web/index.php/pim/addEmployee | Employee ID: 0489 | First name: KarlAdmin725144 | Middle name: Benjamin | Last name: Veum725144
+2026-04-03 19:29:25.274 [main] ERROR c.i.a.p.p.AddEmployeePage - Captured add employee page source at C:\Users\Hp\OneDrive\Documents\New project\target\add-employee-page-source.html
+2026-04-03 19:29:25.289 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:29:25.289 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:29:26.345 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:29:26.345 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:29:26.373 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:29:26.399 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:29:26.401 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-212889366095977734
+2026-04-03 19:29:26.401 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-212889366095977734, --start-maximized], extensions=[]}}
+2026-04-03 19:29:27.610 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:29:31.725 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:29:41.802 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:29:41.802 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:30:28.783 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:30:28.790 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:30:29.260 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:30:29.290 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:30:29.307 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-13662189419375979905
+2026-04-03 19:30:29.308 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-13662189419375979905, --start-maximized], extensions=[]}}
+2026-04-03 19:30:30.498 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:30:33.185 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:30:50.890 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'DeanAdmin833485': [DeanAdmin833485 Leland Jacobi833485]
+2026-04-03 19:31:16.219 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:31:16.219 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:31:16.977 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:31:16.977 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:31:17.000 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:31:17.023 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:31:17.025 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-4204065447375524538
+2026-04-03 19:31:17.025 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-4204065447375524538, --start-maximized], extensions=[]}}
+2026-04-03 19:31:17.850 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:31:21.287 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:31:39.254 [main] INFO  c.i.a.p.a.UserFormPage - Employee autocomplete options displayed for search text 'BasilAdmin881289': [BasilAdmin881289 Geneva Cremin881289]
+2026-04-03 19:31:40.439 [main] INFO  c.i.a.p.a.UserFormPage - Validation messages after Admin user submission: [Should be at least 5 characters]
+2026-04-03 19:31:40.458 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:31:40.458 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.
+2026-04-03 19:31:40.775 [main] INFO  c.i.a.b.BaseTest - Starting test setup. Browser parameter: null, resolved browser: chrome, headless: false
+2026-04-03 19:31:40.775 [main] INFO  c.i.a.f.DriverFactory - Initializing driver. Browser: chrome, headless: false
+2026-04-03 19:31:40.799 [main] INFO  i.g.b.w.WebDriverManager - Using chromedriver 146.0.7680.165 (resolved driver for Chrome 146)
+2026-04-03 19:31:40.839 [main] INFO  i.g.b.w.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Hp\.cache\selenium\chromedriver\win64\146.0.7680.165\chromedriver.exe
+2026-04-03 19:31:40.839 [main] INFO  c.i.a.f.DriverFactory - Created temporary browser profile directory: C:\Users\Hp\AppData\Local\Temp\chrome-profile-8625281764883465053
+2026-04-03 19:31:40.841 [main] INFO  c.i.a.f.DriverFactory - Launching Chrome with options: {browserName=chrome, goog:chromeOptions={args=[--window-size=1920,1080, --disable-dev-shm-usage, --no-sandbox, --disable-gpu, --remote-allow-origins=*, --remote-debugging-port=0, --disable-extensions, --disable-notifications, --disable-popup-blocking, --user-data-dir=C:\Users\Hp\AppData\Local\Temp\chrome-profile-8625281764883465053, --start-maximized], extensions=[]}}
+2026-04-03 19:31:41.798 [main] INFO  c.i.a.f.DriverFactory - Driver initialized successfully for browser: chrome
+2026-04-03 19:31:44.632 [main] INFO  c.i.a.b.BaseTest - Navigated to base URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-04-03 19:31:51.135 [main] INFO  c.i.a.b.BaseTest - Starting test teardown.
+2026-04-03 19:31:51.135 [main] INFO  c.i.a.f.DriverFactory - Quitting driver for current thread.

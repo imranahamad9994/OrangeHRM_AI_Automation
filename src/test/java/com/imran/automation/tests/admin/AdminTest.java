@@ -21,6 +21,69 @@ import java.util.Locale;
 
 public class AdminTest extends BaseTest {
 
+    @Test(description = "Verify Admin user form shows required validation when submitted without mandatory fields.")
+    public void verifyRequiredFieldValidationForAdminUser() {
+        LoginTestData loginData = (LoginTestData) JsonDataReader.getValidLoginTestData()[0][0];
+
+        LoginPage loginPage = new LoginPage(getDriver());
+        DashboardPage dashboardPage = new DashboardPage(getDriver());
+        AdminPage adminPage = new AdminPage(getDriver());
+
+        loginPage.login(loginData.getUsername(), loginData.getPassword());
+        Assert.assertTrue(dashboardPage.isLoaded(), "Dashboard should be visible after login.");
+
+        adminPage.openAdminModule();
+        Assert.assertTrue(adminPage.isModuleLoaded(), "Admin module should load successfully.");
+
+        SystemUsersPage systemUsersPage = adminPage.openSystemUsersPage();
+        Assert.assertTrue(systemUsersPage.isLoaded(), "System Users page should be visible.");
+
+        UserFormPage userFormPage = systemUsersPage.openAddUserForm();
+        Assert.assertTrue(userFormPage.isLoaded(), "Add User form should open successfully.");
+
+        userFormPage.submitEmptyFormExpectingRequiredValidation();
+
+        Assert.assertTrue(userFormPage.hasValidationMessage("Required"),
+                "The Add User form should show required field validation messages.");
+        Assert.assertTrue(userFormPage.getValidationMessageCount() >= 4,
+                "Expected multiple required field validation messages on the Add User form.");
+        ExtentReportManager.logPass("Required field validation is displayed correctly on the Add User form.");
+    }
+
+    @Test(description = "Verify Admin user form rejects usernames shorter than the minimum supported length.")
+    public void verifyMinimumUsernameLengthValidationForAdminUser() {
+        LoginTestData loginData = (LoginTestData) JsonDataReader.getValidLoginTestData()[0][0];
+        Faker faker = new Faker(new Locale("en-IN"));
+        EmployeeName employeeName = buildRandomEmployeeName(faker);
+        AdminUserData invalidUser = new AdminUserData("adm", "Orange@12345", "ESS", "Enabled");
+
+        LoginPage loginPage = new LoginPage(getDriver());
+        DashboardPage dashboardPage = new DashboardPage(getDriver());
+        PimPage pimPage = new PimPage(getDriver());
+        AdminPage adminPage = new AdminPage(getDriver());
+
+        loginPage.login(loginData.getUsername(), loginData.getPassword());
+        Assert.assertTrue(dashboardPage.isLoaded(), "Dashboard should be visible after login.");
+
+        createEmployeeForAdminValidation(pimPage, employeeName);
+        ExtentReportManager.logPass("Created random employee for Admin username length validation.");
+
+        adminPage.openAdminModule();
+        Assert.assertTrue(adminPage.isModuleLoaded(), "Admin module should load successfully.");
+
+        SystemUsersPage systemUsersPage = adminPage.openSystemUsersPage();
+        Assert.assertTrue(systemUsersPage.isLoaded(), "System Users page should be visible.");
+
+        UserFormPage userFormPage = systemUsersPage.openAddUserForm();
+        Assert.assertTrue(userFormPage.isLoaded(), "Add User form should open successfully.");
+        userFormPage.addUserExpectingValidation(employeeName, invalidUser);
+
+        Assert.assertTrue(userFormPage.waitForUsernameValidationContaining("least 5 characters")
+                        || userFormPage.hasValidationMessageContaining("least 5 characters"),
+                "The Add User form should reject usernames shorter than five characters.");
+        ExtentReportManager.logPass("Minimum username length validation is displayed correctly on the Add User form.");
+    }
+
     @Test(description = "Verify a user can add, edit, search, and delete a random admin user in OrangeHRM.")
     public void verifyAddEditAndDeleteUserLifecycle() {
         LoginTestData loginData = (LoginTestData) JsonDataReader.getValidLoginTestData()[0][0];
@@ -92,6 +155,18 @@ public class AdminTest extends BaseTest {
         String uniqueSuffix = String.valueOf(System.nanoTime()).substring(8);
         String username = "imran" + suffixLabel + sanitizeNamePart(faker.name().firstName()).toLowerCase() + uniqueSuffix;
         return new AdminUserData(username, "Orange@12345", role, status);
+    }
+
+    private void createEmployeeForAdminValidation(PimPage pimPage, EmployeeName employeeName) {
+        pimPage.openPimModule();
+        Assert.assertTrue(pimPage.isModuleLoaded(), "PIM module should load successfully.");
+        AddEmployeePage addEmployeePage = pimPage.openAddEmployee();
+        Assert.assertTrue(addEmployeePage.isLoaded(), "Add Employee page should be visible.");
+        addEmployeePage.addEmployee(
+                employeeName.getFirstName(),
+                employeeName.getMiddleName(),
+                employeeName.getLastName()
+        );
     }
 
     private EmployeeName buildRandomEmployeeName(Faker faker) {

@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,6 +26,7 @@ public class UserFormPage extends BasePage {
     private static final By DROPDOWN_OPTIONS = By.cssSelector(".oxd-select-dropdown .oxd-select-option");
     private static final By AUTOCOMPLETE_OPTIONS = By.cssSelector(".oxd-autocomplete-dropdown .oxd-autocomplete-option");
     private static final By FIELD_ERROR_MESSAGES = By.cssSelector(".oxd-input-field-error-message");
+    private static final By USERNAME_FIELD_ERROR = By.xpath("(//label[normalize-space()='Username']/ancestor::div[contains(@class,'oxd-input-group')]//span[contains(@class,'oxd-input-field-error-message')])[1]");
     private static final Logger LOGGER = LogManager.getLogger(UserFormPage.class);
 
     @FindBy(xpath = "//h6[normalize-space()='Add User' or normalize-space()='Edit User']")
@@ -65,14 +67,17 @@ public class UserFormPage extends BasePage {
 
     public void addUser(EmployeeName employeeName, AdminUserData userData) {
         waitForLoaderToDisappear();
-        selectDropdownOption(userRoleDropdown, userData.getUserRole());
-        selectEmployeeName(employeeName);
-        selectDropdownOption(statusDropdown, userData.getStatus());
-        type(usernameInput, userData.getUsername());
-        type(passwordInput, userData.getPassword());
-        type(confirmPasswordInput, userData.getPassword());
-        clickUsingJs(saveButton);
+        populateNewUserForm(employeeName, userData);
+        submitForm();
         waitForSaveCompletion();
+    }
+
+    public void addUserExpectingValidation(EmployeeName employeeName, AdminUserData userData) {
+        waitForLoaderToDisappear();
+        populateNewUserForm(employeeName, userData);
+        submitForm();
+        waitForValidationMessages();
+        LOGGER.info("Validation messages after Admin user submission: {}", getValidationMessages());
     }
 
     public void updateUser(AdminUserData updatedUserData) {
@@ -80,13 +85,75 @@ public class UserFormPage extends BasePage {
         selectDropdownOption(userRoleDropdown, updatedUserData.getUserRole());
         selectDropdownOption(statusDropdown, updatedUserData.getStatus());
         type(usernameInput, updatedUserData.getUsername());
-        clickUsingJs(saveButton);
+        submitForm();
         waitForSaveCompletion();
+    }
+
+    public void submitEmptyFormExpectingRequiredValidation() {
+        waitForLoaderToDisappear();
+        submitForm();
+        waitForValidationMessages();
     }
 
     public String getCurrentUsername() {
         waitForLoaderToDisappear();
         return getInputValue(usernameInput);
+    }
+
+    public boolean hasValidationMessage(String expectedMessage) {
+        return getValidationMessages().stream()
+                .anyMatch(message -> message.equalsIgnoreCase(expectedMessage));
+    }
+
+    public boolean hasValidationMessageContaining(String expectedText) {
+        String normalizedExpectedText = expectedText == null ? "" : expectedText.trim().toLowerCase();
+        return getValidationMessages().stream()
+                .map(message -> message.toLowerCase())
+                .anyMatch(message -> message.contains(normalizedExpectedText));
+    }
+
+    public int getValidationMessageCount() {
+        return getValidationMessages().size();
+    }
+
+    public boolean waitForUsernameValidationContaining(String expectedText) {
+        String normalizedExpectedText = expectedText == null ? "" : expectedText.trim().toLowerCase();
+        try {
+            return wait.until(driver -> {
+                List<WebElement> errorElements = driver.findElements(USERNAME_FIELD_ERROR);
+                if (errorElements.isEmpty()) {
+                    return false;
+                }
+                String message = errorElements.get(0).getText().trim().toLowerCase();
+                return !message.isBlank() && message.contains(normalizedExpectedText);
+            });
+        } catch (TimeoutException exception) {
+            LOGGER.warn("Username validation did not contain '{}' within the wait time. Current messages: {}",
+                    expectedText, getValidationMessages());
+            return false;
+        }
+    }
+
+    public List<String> getValidationMessages() {
+        waitForLoaderToDisappear();
+        return driver.findElements(FIELD_ERROR_MESSAGES)
+                .stream()
+                .map(element -> element.getText().trim())
+                .filter(text -> !text.isBlank())
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
+
+    private void populateNewUserForm(EmployeeName employeeName, AdminUserData userData) {
+        selectDropdownOption(userRoleDropdown, userData.getUserRole());
+        selectEmployeeName(employeeName);
+        selectDropdownOption(statusDropdown, userData.getStatus());
+        type(usernameInput, userData.getUsername());
+        type(passwordInput, userData.getPassword());
+        type(confirmPasswordInput, userData.getPassword());
+    }
+
+    private void submitForm() {
+        clickUsingJs(saveButton);
     }
 
     private void selectDropdownOption(WebElement dropdown, String optionText) {
@@ -158,6 +225,10 @@ public class UserFormPage extends BasePage {
 
     private void waitForLoaderToDisappear() {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(LOADING_SPINNER));
+    }
+
+    private void waitForValidationMessages() {
+        wait.until(driver -> !driver.findElements(FIELD_ERROR_MESSAGES).isEmpty());
     }
 
     private void logFormDiagnostics() {
